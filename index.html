@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simon Game</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id="outerLayer">
+		<div id="settings">
+			<div id="game_name">
+				<h1>SIMON</h1>
+			</div>
+			<div id="set_btn">
+				<button id="start">Start / Restart</button>
+				<button id="strict">Strict</button>
+			</div>
+			<div id="steps_screen">
+				<div id="screen"><p>- -</p></div>
+				<p>No. of Steps</p>
+			</div>
+		</div>
+		<div id="btn1" class="btn">
+			<audio><source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg"></audio>
+			<span>1</span>
+		</div>
+		<div id="btn2" class="btn">
+			<audio><source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg"></audio>
+			<span>2</span>
+		</div>
+		<div id="btn3" class="btn">
+			<audio><source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg"></audio>
+			<span>3</span>
+		</div>
+		<div id="btn4" class="btn">
+			<audio><source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg"></audio>
+			<span>4</span>
+		</div>
+	</div>
+	<script
+			  src="http://code.jquery.com/jquery-3.2.1.js"
+			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="engine.js"></script>
+</body>
+</html>
